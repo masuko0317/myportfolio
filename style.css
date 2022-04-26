@@ -1,0 +1,197 @@
+/* PC,スマホ共有スタイル */
+body {
+    font-family: "Source Sans Pro", "Hiragino Kaku Gothic ProN", "Meiryo", Arial, sans-serif;
+    background-color: azure;
+    width: 1450px;
+}
+
+p {
+    font-size: 18px;
+}
+
+/* =====
+PC用のスタイル
+======*/
+/*横幅設定*/
+ body {
+     height: 100vw;
+     margin: 0;
+     padding: 0;
+    }
+
+/* ヘッダー */
+ header {
+     position: absolute;
+     top: 10px;
+     border-width: 1px;
+     border-color: white;
+     border-style: solid;
+     background-color: rgba(135, 207, 235, 0.586);
+     width: 1450px;
+    }
+
+#header {
+     background-image: url(images/okinawasea.jpg); 
+     background-size: cover;
+     background-position: center top;
+     background-repeat: no-repeat;
+     min-width: 100vw;
+     min-height: 100vh;
+     margin: 0;   
+}
+
+/* ナビゲーションのレイアウト */
+#nav-pc {
+     width: 100%;
+     font-weight: bold;
+     text-align: right;
+     font-size: 25px;
+     padding-top: 18px;
+    }
+
+#nav-pc > a {
+    text-align: right;
+    text-decoration: none;
+    justify-content: space-between;
+    margin-right: 30px;
+}
+#nav-pc > a:link {
+    color: white;
+}
+#nav-pc > a:visited {
+    color: white;
+}
+#nav-pc > a:hover {
+    color: white;
+    text-decoration: underline;
+}
+#nav-pc > a:active {
+    color: white;
+}
+
+/*見出しの背景装飾の設定 */
+#headline {
+    position: absolute;
+    top: 150px;
+    left: -60px;
+    background-color: rgba(197, 238, 255, 0.361);
+    border-radius: 50%;
+    height: 500px;
+    width: 500px;
+
+}
+/* 見出し */
+#headline  > h1 {
+    position: absolute;
+    top: 180px;
+    left: 200px;
+    color: skyblue;
+    font-size: 120px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* 小見出し　(自己紹介　お問い合わせ) */
+.h2 {
+    font-size: 40px;
+    color: white;
+    background-color: skyblue;
+    text-align: center;
+    width: 100%;
+    height: 70px;
+    margin-top: 0px;
+}  
+
+/* 自己紹介 */
+#introduction {
+    background-color: azure;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+#introduction-image {
+    border:1px black solid;
+    border-radius: 50%;
+    margin: 0px;
+}
+
+#introduction-part > li {
+    list-style-type: disc;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* コンタクト画面 */
+#contact {
+    width: 100%;
+    height: 650px;
+    background-color: aliceblue;
+}
+
+
+
+.contact-label {
+    display: block;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.contact-textbox {
+    width: 180px;
+    height: 30px;
+    border: 1px rgb(0, 200, 255) solid;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.contact-textarea {
+    width: 300px;
+    height: 70px;
+    border: 1px rgb(0, 200, 255) solid;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+form {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* フッター */
+footer {
+    width: 1450px;
+    height: 150px;
+    background-color: skyblue;
+    text-align: center;
+}
+
+#footer-link {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#footer-link > a {
+    text-decoration: none;
+}
+
+#footer-link > a:link {
+    color: azure;
+}
+
+#footer-link > a:visited {
+    color: azure;
+}
+
+#footer-link > a:hover {
+    color: azure;
+    text-decoration: underline;
+}
+
+#footer-link > a:active {
+    color: azure;
+}
+
+#copylight {
+    float: right;
+    padding-right: 100px;
+    margin: 0;
+}
