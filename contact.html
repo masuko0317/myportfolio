@@ -27,11 +27,11 @@
             <article>
                 <section id="contact">
                     <h2 class="h2">お問い合わせ</h2>
-                    <form action="https://api.staticforms.xyz/submit" method="post">
+                    <form name="textFrom" action="https://api.staticforms.xyz/submit" method="post" onsubmit="return check()">
                         <input type="text" name="honeypot" style="display:none">
                         <input type="hidden" name="accessKey" value="92bbda07-3f1c-4ba9-9494-579fa96bbee2">
                         <input type="hidden" name="subject" value="Webサイトからお問い合わせがありました">
-                        <input type="hidden" name="replyTo" value="0317masuo@gmail.com">
+                        <input type="hidden" name="replyTo" value=""> <!--送信先のメールアドレス-->
                         <input type="hidden" name="redirectTo" value="">     
                         <div>
                             <div id="contact-heading">
@@ -71,7 +71,7 @@
                               <input class="radiobutton" type="radio" value="both" name="contact"><label>どちらでも</label>
                             </div>
                         </div>
-                            <input type="image" value="Submit" src="images/button-submit.png" alt="送信する">
+                            <button id="submit-btn" type="submit" id="button">送信</button>
                     </form>
                 </section>
             </article>
@@ -84,5 +84,6 @@
                 <span id="copylight">&copy;2022 M Reo All Rights Reserved.</span>
             </footer>
         </main>
+        <script src="js/contact.js"></script>
     </body>
 </html>
