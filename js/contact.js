@@ -1,18 +1,10 @@
-function check() {
-    if(document.forms.name.value ==""){
-        alert("お名前を入力してください");
-        return false;
+document.addEventListener('submit',e=>{
+    const req=[...e.target.querySelectorAll('[data-required]')];
+    const empty=req.filter(x=>x.value=="");
+    const list={"name":"お名前","email":"メールアドレス","tel":"電話番号","message":"お問い合わせ内容"};
+    if(req && empty){
+      empty[0].focus();
+      alert(list[empty[0].name]+'を入力してください');
+      e.preventDefault();
     }
-    if(document.forms.email.value ==""){
-        alert("メールアドレスを入力してください")
-        return false;
-    }
-    if(document.forms.tel.value ==""){
-        alert("電話番号を入力してください")
-        return false;
-    }
-    if(document.forms.message.value ==""){
-        alert("お問い合わせ内容を入力してください")
-        return false;
-    }
-};
+  });

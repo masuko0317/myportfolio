@@ -27,7 +27,7 @@
             <article>
                 <section id="contact">
                     <h2 class="h2">お問い合わせ</h2>
-                    <form name="textFrom" action="https://api.staticforms.xyz/submit" method="post" onsubmit="return check()">
+                    <form name="textFrom" action="https://api.staticforms.xyz/submit" method="post">
                         <input type="text" name="honeypot" style="display:none">
                         <input type="hidden" name="accessKey" value="92bbda07-3f1c-4ba9-9494-579fa96bbee2">
                         <input type="hidden" name="subject" value="Webサイトからお問い合わせがありました">
@@ -38,19 +38,19 @@
                                 <label class="contact-label">お名前</label>
                             </div>
                             <div class="contact-form">
-                                <input type="text" name="name" placeholder="入力してください" class="contact-textbox">
+                                <input type="text" name="name" placeholder="入力してください" class="contact-textbox" data-required="1">
                             </div>
                             <div id="contact-heading">
                                 <label class="contact-label">メールアドレス</label>
                             </div>
                             <div>
-                                <input type="text" name="email" placeholder="入力してください" class="contact-textbox">
+                                <input type="text" name="email" placeholder="入力してください" class="contact-textbox" data-required="1">
                             </div>
                             <div class="contact-heading">
                                 <label class="contact-label">電話番号</label>
                             </div>
                             <div>
-                                <input type="text" name="tel" placeholder="入力してください" class="contact-textbox">
+                                <input type="text" name="tel" placeholder="入力してください" class="contact-textbox" data-required="1">
                             </div>
                         </div>
                         <div>
@@ -58,7 +58,7 @@
                                 <label class="contact-label">お問い合わせ内容</label>
                             </div>
                             <div>
-                                <textarea class="contact-textarea" placeholder="入力してください" name="message"></textarea>
+                                <textarea class="contact-textarea" placeholder="入力してください" name="message" data-required="1"></textarea>
                             </div>
                         </div>
                         <div>
