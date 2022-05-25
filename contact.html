@@ -27,25 +27,32 @@
             <article>
                 <section id="contact">
                     <h2 class="h2">お問い合わせ</h2>
-                    <form action="https://api.staticforms.xyz/submit" method="post">
+                    <form action="https://api.staticforms.xyz/submit" method="post" name="textBox">
                         <input type="text" name="honeypot" style="display:none">
                         <input type="hidden" name="accessKey" value="92bbda07-3f1c-4ba9-9494-579fa96bbee2">
                         <input type="hidden" name="subject" value="Webサイトからお問い合わせがありました">
                         <input type="hidden" name="replyTo" value=""> <!--送信先のメールアドレス-->
-                        <input type="hidden" name="redirectTo" value="">     
-                        <div>
+                        <input type="hidden" name="redirectTo" value="">  
+
+                        <div class ="contact-contents">
                             <div id="contact-heading">
                                 <label class="contact-label">お名前</label>
                             </div>
                             <div class="contact-form">
                                 <input type="text" name="name" placeholder="入力してください" class="contact-textbox" data-required="1">
                             </div>
+                        </div>
+
+                        <div class ="contact-contents">
                             <div id="contact-heading">
                                 <label class="contact-label">メールアドレス</label>
                             </div>
                             <div>
                                 <input type="text" name="email" placeholder="入力してください" class="contact-textbox" data-required="1">
                             </div>
+                        </div>
+
+                        <div class ="contact-contents">
                             <div class="contact-heading">
                                 <label class="contact-label">電話番号</label>
                             </div>
@@ -53,7 +60,8 @@
                                 <input type="text" name="tel" placeholder="入力してください" class="contact-textbox" data-required="1">
                             </div>
                         </div>
-                        <div>
+
+                        <div class="contact-heading">
                             <div class="contact-heading">
                                 <label class="contact-label">お問い合わせ内容</label>
                             </div>
@@ -61,7 +69,8 @@
                                 <textarea class="contact-textarea" placeholder="入力してください" name="message" data-required="1"></textarea>
                             </div>
                         </div>
-                        <div>
+
+                        <div class="contact-heading">
                             <div class="contact-heading">
                                 <label class="contact-label">ご連絡方法</label>
                             </div>
@@ -71,7 +80,9 @@
                               <input class="radiobutton" type="radio" value="both" name="contact"><label>どちらでも</label>
                             </div>
                         </div>
+
                             <button id="submit-btn" type="submit" id="button">送信</button>
+                            
                     </form>
                 </section>
             </article>
